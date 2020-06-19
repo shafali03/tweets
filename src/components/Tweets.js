@@ -1,12 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import './Tweet.css'
+import Author from './Author'
+import Message from './Message'
 
 function Tweet() {
   return (
     <div className="tweet">
       <Avatar />
-      Tweet
+      <div className="content">
+        <Author />
+        <Message />
+      </div>
     </div>
   )
 }
